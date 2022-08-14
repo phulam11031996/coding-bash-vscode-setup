@@ -1,6 +1,7 @@
 {
   // LANGUAGE SETTINGS
   // VIM SETTINGS
+  "vim.enableNeovim": true,
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -76,6 +77,24 @@
         "workbench.action.splitEditor"
       ]
     },
+    {
+      "before": [
+        "<space>"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<space>"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
+    }
   ],
   "vim.leader": "<Space>",
   "vim.handleKeys": {
@@ -92,13 +111,30 @@
     // "<C-0>": true,
   },
   // GENERALS
-  "tabnine.experimentalAutoImports": true,
   "files.autoSave": "onFocusChange",
   "editor.lineNumbers": "relative",
   "scrolloff.scrolloff": 10,
-  "window.zoomLevel": -1,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.layoutControl.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+  "editor.minimap.scale": 2,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "workbench.activityBar.visible": false,
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "workbench.startupEditor": "none",
+  "editor.rulers": [
+    80,
+    125
+  ],
   "workbench.colorCustomizations": {
     "editorLineNumber.foreground": "#ffffff",
     "editorLineNumber.activeForeground": "#00ff00",
+    "statusBar.background": "#3b86ff",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#212121",
+    "statusBar.debuggingBackground": "#263238"
   },
+  // RANDOM SETTINGS
 }
