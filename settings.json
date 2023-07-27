@@ -1,140 +1,142 @@
 {
-  // LANGUAGE SETTINGS
-  // VIM SETTINGS
-  "vim.enableNeovim": true,
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.sneak": true,
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "<tab>"
-      ],
-      "commands": [
-        "workbench.action.nextEditor"
-      ]
+    // LANGUAGE SETTINGS
+    // VIM SETTINGS
+    "vim.enableNeovim": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.normalModeKeyBindings": [
+      {
+        "before": [
+          "<tab>"
+        ],
+        "commands": [
+          "workbench.action.nextEditor"
+        ]
+      },
+      {
+        "before": [
+          "<S-tab>"
+        ],
+        "commands": [
+          "workbench.action.previousEditor"
+        ]
+      },
+      {
+        "before": [
+          "<S-k>"
+        ],
+        "commands": [
+          "editor.action.showHover"
+        ]
+      },
+    ],
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "j",
+          "j"
+        ],
+        "after": [
+          "<Esc>"
+        ]
+      },
+    ],
+    "vim.visualModeKeyBindings": [
+      {
+        "before": [
+          ">"
+        ],
+        "after": [
+          ">",
+          "g",
+          "v"
+        ]
+      },
+      {
+        "before": [
+          "<"
+        ],
+        "after": [
+          "<",
+          "g",
+          "v"
+        ]
+      },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": [
+          "<leader>",
+          "v"
+        ],
+        "commands": [
+          "workbench.action.splitEditor"
+        ]
+      },
+      {
+        "before": [
+          "<space>"
+        ],
+        "commands": [
+          "whichkey.show"
+        ]
+      }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+      {
+        "before": [
+          "<space>"
+        ],
+        "commands": [
+          "whichkey.show"
+        ]
+      }
+    ],
+    "vim.leader": "<Space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false,
+      // VS Code new marker @ next occurence
+      "<C-c>": false,
+      // Cut
+      "<C-x>": false,
+      // Paste
+      "<C-v>": false,
+      "<C-z>": false,
+      "<C-y>": false,
+      // "<C-0>": true,
     },
-    {
-      "before": [
-        "<S-tab>"
-      ],
-      "commands": [
-        "workbench.action.previousEditor"
-      ]
+    // GENERALS
+    "files.autoSave": "onFocusChange",
+    "editor.lineNumbers": "relative",
+    "scrolloff.scrolloff": 10,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.scale": 2,
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true,
+    "workbench.activityBar.visible": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "workbench.startupEditor": "none",
+    "editor.rulers": [
+      80,
+      125
+    ],
+    "workbench.colorCustomizations": {
+      "editorLineNumber.foreground": "#ffffff",
+      "editorLineNumber.activeForeground": "#00ff00",
+      "statusBar.background": "#3b86ff",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.noFolderBackground": "#212121",
+      "statusBar.debuggingBackground": "#263238"
     },
-    {
-      "before": [
-        "<S-k>"
-      ],
-      "commands": [
-        "editor.action.showHover"
-      ]
-    },
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    },
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        ">"
-      ],
-      "after": [
-        ">",
-        "g",
-        "v"
-      ]
-    },
-    {
-      "before": [
-        "<"
-      ],
-      "after": [
-        "<",
-        "g",
-        "v"
-      ]
-    },
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<leader>",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.splitEditor"
-      ]
-    },
-    {
-      "before": [
-        "<space>"
-      ],
-      "commands": [
-        "whichkey.show"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<space>"
-      ],
-      "commands": [
-        "whichkey.show"
-      ]
-    }
-  ],
-  "vim.leader": "<Space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false,
-    // VS Code new marker @ next occurence
-    "<C-c>": false,
-    // Cut
-    "<C-x>": false,
-    // Paste
-    "<C-v>": false,
-    "<C-z>": false,
-    "<C-y>": false,
-    // "<C-0>": true,
-  },
-  // GENERALS
-  "files.autoSave": "onFocusChange",
-  "editor.lineNumbers": "relative",
-  "scrolloff.scrolloff": 10,
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.layoutControl.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.enablePreview": false,
-  "editor.minimap.scale": 2,
-  "oneDarkPro.bold": true,
-  "oneDarkPro.vivid": true,
-  "workbench.activityBar.visible": false,
-  "python.defaultInterpreterPath": "/usr/bin/python3",
-  "workbench.startupEditor": "none",
-  "editor.rulers": [
-    80,
-    125
-  ],
-  "workbench.colorCustomizations": {
-    "editorLineNumber.foreground": "#ffffff",
-    "editorLineNumber.activeForeground": "#00ff00",
-    "statusBar.background": "#3b86ff",
-    "statusBar.foreground": "#ffffff",
-    "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238"
-  },
-  // RANDOM SETTINGS
-}
+    // USE TERMINAL IN ITERM2
+    "terminal.integrated.fontFamily": "MesloLGS NF"
+    // RANDOM SETTINGS
+  }

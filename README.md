@@ -1,2 +1,5 @@
 # coding-bash-vscode-setup
-This contains my personal setup for VSCode and Bash configuration
+run install-softwares.sh first
+run setup-terminal.sh second
+run setup-yabai-and-skhd.sh third
+
