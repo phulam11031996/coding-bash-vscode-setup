@@ -20,12 +20,6 @@ rm -f ~/.config/skhd/yabairc
 cp yabairc ~/.config/yabai/
 cp skhdrc ~/.config/skhd/
 
-# Install limelight
-git clone https://github.com/koekeishiya/limelight.git ~/.config/limelight
-cd ~/.config/limelight
-make
-ln -s ~/.config/limelight/bin/limelight /usr/local/bin/limelight
-
 echo "You to start yabai and skhd yourself"
 echo "\tStart it like so:"
 echo "\tyabai --start-service"

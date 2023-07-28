@@ -5,11 +5,11 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-# yabai -m config top_padding 5
-# yabai -m config bottom_padding 5
-# yabai -m config left_padding 5
-# yabai -m config right_padding 5
-# yabai -m config window_gap 5
+yabai -m config top_padding 2
+yabai -m config bottom_padding 2
+yabai -m config left_padding 2
+yabai -m config right_padding 2
+yabai -m config window_gap 2
 
 # -- mouse settings --
 
@@ -29,16 +29,12 @@ yabai -m mouse_drop_action swap
 # disable specific apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 
-# kill any existing limelight process if one exists, before we launch a new one
-# killall limelight &> /dev/null
-# /usr/local/bin/limelight &> /dev/null &
-
-# limelight configuration
-# limelight -m config debug_output on
-# limelight -m config placement exterior
-# limelight -m config width 1
-# limelight -m config radius 10.0
-# limelight -m config normal_color 0xFF00FF00
+yabai -m config window_opacity_duration      0.0
+yabai -m config window_shadow                on
+yabai -m config window_border                on
+yabai -m config window_border_placement      inset
+yabai -m config window_border_width          4
+yabai -m config active_window_border_color   0xff00ff00
+yabai -m config normal_window_border_color   0xff505050
